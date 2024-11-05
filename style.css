@@ -1,3 +1,4 @@
+ /*GENERAL STYLES*/
 * {
   margin: 0;
   padding: 0;
@@ -8,49 +9,47 @@
     scroll-behavior: smooth;
   }
 
-  /* HEADER */
+  body {
+    color: #FFFFFF;
+    background-color: #080808; 
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
+  /* HEADER STYLES */
   .header__nav {
     color: #9C9C9C;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1B1B1B;
-    width: 1110px;
+    max-width: 1110px;
     height: 70px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     margin-left: 130px;
     margin-right: 85px;
-   
     padding: 0  6rem;
-    
   }
 
   .nav__menu ul {
     display: flex;
-    gap: 1.5rem;
+    justify-content: space-between;
+    gap: 1.8rem;
+    text-wrap: nowrap;
+    margin-right: 0.5rem;
+      
   } 
+
   .nav__socials ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.2rem;
     font-size: 20px;
     margin-left: 300px;
-  
   }
 
-  
-
-  body {
-    color: #FFFFFF;
-    background-color: #080808; 
-  
-    max-width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-
-}
   li {
     list-style: none;
     cursor: pointer;
@@ -61,30 +60,24 @@
     display: none;
   }
 
+/*HERO SECTION*/
   .hero__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
   }
 
   .hero-left__container {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 538px;
-    height: 247px;
+    width: 100%;
+    height: auto;
     margin-top: 101px;
     margin-left: 180px;
     gap: 5px;
-    opacity: 0px;
-    width: Fixed (538px)px;
-
-
-
   }
   
-
   .hero-left-text h1 {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -112,7 +105,6 @@
   text-align: left;
   width: 480px;
   height: 72px;
-  gap: 0px;
   opacity: 0px;
   letter-spacing: 1%;
   color: #9C9C9C;
@@ -121,145 +113,128 @@
   }
 
   .hero-left-button button {
-  
     width: 307.89px;
-height: 63px;
-padding: 19px 60px 19px 60px;
-gap: 10px;
-border-radius: 4px 0px 0px 0px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
-background: #3F8E00;
-border: 1px solid #62BA1B;
-box-shadow: 0px 8px 30px 0px #3F8E0080;
-font-family: "IBM Plex Mono";
-font-size: 16px;
-font-weight: 700;
-line-height: 20.8px;
-text-align: left;
-color: #FFFFFF;
-margin-top: 25PX;
+    height: 63px;
+    padding: 19px 60px 19px 60px;
+    gap: 10px;
+    border-radius: 4px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #3F8E00;
+    border: 1px solid #62BA1B;
+    box-shadow: 0px 8px 30px 0px #3F8E0080;
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.8px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 25PX;
   }
 
   .hero-left-button button span {
     width: 180px;
-height: 21px;
-gap: 0px;
-opacity: 0px;
-
+    height: 21px;
   }
 
   .hero-right__container {
      width: 100%;
-height: auto;
-margin-top: -110px;
-margin-left: -33px;
-gap: 0px;
-opacity: 0px;
-
+      height: auto;
+      margin-top: -110px;
+      margin-left: -33px;
   }
 
   .hero-right__container img {
     max-width: 100%;
-height: auto;
-margin-top: 150px;
-margin-left: 75px;
-gap: 0px;
-opacity: 0px;
-
+    height: auto;
+    margin-top: 150px;
+    margin-left: 75px;
   }
 
+/*FOOTER SECTION*/
   .logo-top  {
     width: 93px;
-height: 18px;
-margin-top: 30px;
-margin-bottom: 12px;
-margin-left: 180px;
-gap: 10px;
-opacity: 0px;
-
+    height: 18px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    margin-left: 180px;
+    gap: 10px;
   }
 
   .logo-top p {
     font-family: "IBM Plex Mono";
-font-size: 14px;
-font-weight: 400;
-line-height: 18.2px;
-text-align: left;
-
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
   }
+
   .logo-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 920px;
     height: 60px;
     margin-left: 180px;
-    
-    opacity: 0px;
-    width: 1280px;
-
-  opacity: 0px;
-  background: #080808;
-  filter: grayscale(100%);  
+  
+    background: #080808;
+    filter: grayscale(100%);  
   }
 
   .logo1 {
     width: 160px;
-height: 60px;
-gap: 10px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
-border: 1px solid #1B1B1B;
-color: #9C9C9C;
-filter: grayscale(100%);
-opacity: 0.3px;
+    height: 60px;
+    gap: 10px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #1B1B1B;
+    color: #9C9C9C;
+    filter: grayscale(100%);
+    opacity: 0.3px;
   }
 
   .logo1 img {
     display: flex;
     width: 100%;
-height: 20px;
-margin-top: 20px;
-margin-left: 9px;
-opacity: 0.3px;
-color: #9C9C9C;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 9px;
+    opacity: 0.3px;
+    color: #9C9C9C;
   }
-.clickup {
-  display: flex;
-    width: 100%;
-height: 20px;
-margin-top: -20px;
-margin-left: 67px;
-opacity: 0.3px;
-color: #9C9C9C;
 
+.clickup {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin-top: -20px;
+    margin-left: 67px;
+    opacity: 0.3px;
+    color: #9C9C9C;
 }
+
   .logo2 {
     width: 160px;
-height:60px;
-gap: 10px;
-border: 1px 0px 0px 0px;
-border: 1px solid #1B1B1B
+    height:60px;
+    gap: 10px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #1B1B1B
   }
 
   .fa-dropbox {
     width: 82.32px;
-height: 20px;
-margin-top: 20px;
-margin-left: 39px;
-opacity: 0.3px;
-color: #9C9C9C;
-font-size: 13px;
-
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 39px;
+    opacity: 0.3px;
+    color: #9C9C9C;
+    font-size: 13px;
   }
 
   .logo3 {
     width: 160px;
-height: 60px;
-gap: 10px;
-border: 1px 0px 0px 0px;
-border: 1px solid #1B1B1B;
-
+    height: 60px;
+    gap: 10px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #1B1B1B;
   }
 
   .paychex-logo {
@@ -268,39 +243,36 @@ border: 1px solid #1B1B1B;
     justify-items: center;
     margin-top: 17px;
     opacity: 0.3px;
-color: #9C9C9C;
-font-style: italic;
-font-weight: 600;
-
+    color: #9C9C9C;
+    font-style: italic;
+    font-weight: 600;
   }
 
   .logo4 {
     width: 160px;
-height: 60px;
-gap: 10px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
-border: 1px solid #1B1B1B;
+    height: 60px;
+    gap: 10px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #1B1B1B;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     color: #9C9C9C;
-gap: 0px;
-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
+
   .logo5 {
     width: 160px;
-height: 60px;
-gap: 10px;
-border: 1px 0px 0px 0px;
-opacity: 0px;
-border: 1px solid #1B1B1B;
+    height: 60px;
+    gap: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #1B1B1B;
     display: flex;
     justify-content: center;
     justify-items: center;
-color: #000;
-
+    color: #000;
   }
 
 .fa-stripe  {
@@ -309,17 +281,12 @@ color: #000;
     justify-items: center;
     margin-top: 17px;
     color: #9C9C9C;
-width: 60px;
-height: 25px;
-font-size: 30px;
-
-
+    width: 60px;
+    height: 25px;
+    font-size: 30px;
   }
 
 
-
-  
-  
  /* MEDIA QUERIES */
 @media (max-width: 920px) {
   .nav__menu,
@@ -329,7 +296,4 @@ font-size: 30px;
   .fa-solid {
     display: block;
   }
-
-  
 }
-
