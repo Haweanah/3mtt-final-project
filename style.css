@@ -125,12 +125,13 @@ body {
 
   .hero-left-text p {
     font-size: 1.1rem;
+  
   }
 
   .logo-container {
     gap: 2rem;
     padding: 2rem 1rem;
-  }
+  } 
 }
 
 /* Desktop View (min-width: 1024px) */
